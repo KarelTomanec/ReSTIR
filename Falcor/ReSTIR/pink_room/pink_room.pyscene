@@ -1,0 +1,83 @@
+# Load FBX
+sceneBuilder.importScene('pink_room.fbx')
+
+# Add camera
+camera = Camera()
+camera.position = float3(-3.249782, 1.517224, -3.919533)
+camera.target = float3(-2.928317, 1.358294, -2.986044)
+camera.up = float3(0.000632, 0.999998, 0.001836)
+camera.focalLength = 21.0
+camera.aspectRatio = 1.0
+sceneBuilder.addCamera(camera)
+
+# Add directional light
+# dirLight = DirectionalLight('DirLight0')
+# dirLight.intensity = float3(5.0, 5.0, 5.0)
+# dirLight.direction = float3(0.3642265796661377, -0.5452651977539063, 0.7549999952316284)
+# sceneBuilder.addLight(dirLight)
+
+# Add point lights
+
+pointLight = PointLight('PointLight0')
+pointLight.intensity = float3(1.0, 1.0, 1.0)
+pointLight.position = float3(-4.645481586456299, 1.5427508354187012, -1.488459825515747)
+pointLight.direction = float3(0.0, -1.0, 0.0)
+pointLight.openingAngle = 180.0
+pointLight.penumbraAngle = 0.0
+sceneBuilder.addLight(pointLight)
+
+pointLight = PointLight('PointLight1')
+pointLight.intensity = float3(1.0, 1.0, 1.0)
+pointLight.position = float3(-1.016136884689331, 1.4740270376205445, -1.4256235361099244)
+pointLight.direction = float3(0.0, -1.0, 0.0)
+pointLight.openingAngle = 180.0
+pointLight.penumbraAngle = 0.0
+sceneBuilder.addLight(pointLight)
+
+pointLight = PointLight('PointLight2')
+pointLight.intensity = float3(1.0, 1.0, 1.0)
+pointLight.position = float3(-3.016136884689331, 1.0, -1.4256235361099244)
+pointLight.direction = float3(0.0, -1.0, 0.0)
+pointLight.openingAngle = 180.0
+pointLight.penumbraAngle = 0.0
+sceneBuilder.addLight(pointLight)
+
+pointLight = PointLight('PointLight3')
+pointLight.intensity = float3(1.0, 1.0, 1.0)
+pointLight.position = float3(-2.016136884689331, 1.0, -1.3256235361099244)
+pointLight.direction = float3(0.0, -1.0, 0.0)
+pointLight.openingAngle = 180.0
+pointLight.penumbraAngle = 0.0
+sceneBuilder.addLight(pointLight)
+
+pointLight = PointLight('PointLight4')
+pointLight.intensity = float3(1.0, 1.0, 1.0)
+pointLight.position = float3(-3.6, 0.3, -1.3256235361099244)
+pointLight.direction = float3(0.0, -1.0, 0.0)
+pointLight.openingAngle = 180.0
+pointLight.penumbraAngle = 0.0
+sceneBuilder.addLight(pointLight)
+
+pointLight = PointLight('PointLight5')
+pointLight.intensity = float3(1.0, 1.0, 1.0)
+pointLight.position = float3(-4.36136884689331, 0.7, -1.3256235361099244)
+pointLight.direction = float3(0.0, -1.0, 0.0)
+pointLight.openingAngle = 180.0
+pointLight.penumbraAngle = 0.0
+sceneBuilder.addLight(pointLight)
+
+pointLight = PointLight('PointLight6')
+pointLight.intensity = float3(1.0, 1.0, 1.0)
+pointLight.position = float3(-2.36136884689331, 0.5, -2)
+pointLight.direction = float3(0.0, -1.0, 0.0)
+pointLight.openingAngle = 180.0
+pointLight.penumbraAngle = 0.0
+sceneBuilder.addLight(pointLight)
+
+pointLight = PointLight('PointLight7')
+pointLight.intensity = float3(1.0, 1.0, 1.0)
+pointLight.position = float3(0, 0.5, -1.256235361099244)
+pointLight.direction = float3(0.0, -1.0, 0.0)
+pointLight.openingAngle = 180.0
+pointLight.penumbraAngle = 0.0
+sceneBuilder.addLight(pointLight)
